@@ -6,9 +6,9 @@ class Message < ApplicationRecord
     def send_sms
       response = RestClient::Request.new(
         :method => :post,
-        :url => "https://api.twilio.com/2010-04-01/Accounts/SKdba6160bb8d8e7472b91caa5bb10ea41/Messages.json",
-        :user => "SKdba6160bb8d8e7472b91caa5bb10ea41",
-        :password => "29JbQQnjbXD894bnwSNYBDqnVULCnW0h",
+        :url => "https://api.twilio.com/2010-04-01/Accounts/AC7b8734666478b48284385f74d67e6610/Messages.json",
+        :user => ENV['TWILO_SID'],
+        :password => ENV['TWILO_AUTH_TOKEN'],
         :payload => {
           :Body => body,
           :From => from,

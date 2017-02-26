@@ -2,7 +2,7 @@
 
 <ul>
   <% @messages.each do |sms| %>
-    <li><%= link_to mss.id, message_path(sms) %></li>
+    <li><%= link_to sms.id, message_path(sms) %></li>
   <% end %>
 </ul>
 
