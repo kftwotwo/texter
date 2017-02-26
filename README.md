@@ -1,24 +1,46 @@
-# README
+# Texter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+ Uses twilio api to send sms, 2/25/17
 
-Things you may want to cover:
+ By [Kevin Finley](http://www.kfinley.com)
 
-* Ruby version
+## Description
 
-* System dependencies
+This application uses Twilio's API to send sms to a particular phone number. And uses `rest-client` for the requests.
 
-* Configuration
+## Setup/Installation Requirements
 
-* Database creation
+Clone the repository and `cd` into your directory:
+```
+$ bundle install
+$ rails db:create
+$ rails db:migrate
+$ rails db:test:prepare
+$ rails s
+```
+URL: `localhost:3000`
+## Known Bugs
 
-* Database initialization
+If you notice any bugs or problems you can fill out an issue [here](http://www.github.com/kftwotwo/texter/issues) or feel free to submit a pull request.
 
-* How to run the test suite
+## Contact details
+If you need to contact me here is my info
 
-* Services (job queues, cache servers, search engines, etc.)
+Email: kftwotwo@gmail.com<br>
+Github: [kftwotwo](https://www.github.com/kftwotwo)<br>
+Linkedin: [Kevin Finley](https://www.linkedin.com/in/kftwotwo/)
 
-* Deployment instructions
+## Contribute
 
-* ...
+If you wish to contribute create an issue and describe your idea then fork it and submit a pull request!
+
+## Technologies Used
+```
+HTML
+Ruby
+```
+### License
+
+*This is under a MIT License*
+
+Copyright (c) 2016 **_Kevin Finley_**
